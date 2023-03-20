@@ -5,7 +5,7 @@
 #play{
     width:400px;
     height:400px;
-    left:700px;
+    left:750px;
     position:absolute;
     top:370px;
 
@@ -15,7 +15,7 @@
     width:700px;
     height:500px;
     position:absolute;
-   left:560px;
+   left:600px;
 }
 #lobby{
     display:none;
