@@ -16,8 +16,3 @@ function start() {
     menu.style.display="flex";
 }
 
-function pokemon(){
-pokemans.style.display="flex";
-}
-
-
