@@ -125,28 +125,137 @@ Attacks : Metal Claw, Hydro cannon, Water Gun
  </div>
 
 <div id="pokeChooser">
-<img src="./res/img/squirtlesmall.png" id="squirtleSmall">
-     <img src="./res/img/wartortlesmall.png" id="wartortleSmall">
-        <img src="./res/img/blastoisesmall.png" id="blastoiseSmall">
 
-<img src="./res/img/charmandersmall.png" id="charmanderSmall">
-    <img src="./res/img/charmeleonsmall.png" id="charmeleonSmall">
-       <img src="./res/img/charizardsmall.png" id="charizardSmall">
+<img src="./res/img/squirtlesmall.png" id="squirtleSmall"onclick="battleSquirt()">
+     <img src="./res/img/wartortlesmall.png" id="wartortleSmall"onclick="battleWart()">
+        <img src="./res/img/blastoisesmall.png" id="blastoiseSmall"onclick="battleBlast()">
 
-<img src="./res/img/bulbasaursmall.png" id="bulbasaurSmall">
-     <img src="./res/img/ivysaursmall.png" id="ivysaurSmall">
-         <img src="./res/img/venusaursmall.png" id="venusaurSmall">
+<img src="./res/img/charmandersmall.png" id="charmanderSmall" onclick="battleCharman()">
+    <img src="./res/img/charmeleonsmall.png" id="charmeleonSmall" onclick="battleCharmel()">
+       <img src="./res/img/charizardsmall.png" id="charizardSmall" onclick="battleChar()">
 
-<img src="./res/img/snorlaxsmall.png" id="snorlaxSmall">
+<img src="./res/img/bulbasaursmall.png" id="bulbasaurSmall"onclick="battleBulb()">
+     <img src="./res/img/ivysaursmall.png" id="ivysaurSmall"onclick="battleIvy()">
+         <img src="./res/img/venusaursmall.png" id="venusaurSmall"onclick="battleVenus()">
 
-<img src="./res/img/pikachusmall.png" id="pikaSmall">
+<img src="./res/img/snorlaxsmall.png" id="snorlaxSmall" onclick="battleSnor()">
 
-<img src="./res/img/piplupsmall.png" id="piplupSmall">
-    <img src="./res/img/prinplupsmall.png" id="prinplupSmall">
-        <img src="./res/img/emporeonsmall.png" id="emporeonSmall">
+<img src="./res/img/pikachusmall.png" id="pikaSmall" onclick="battlePika()">
+
+<img src="./res/img/piplupsmall.png" id="piplupSmall" onclick="battlePip()">
+    <img src="./res/img/prinplupsmall.png" id="prinplupSmall"onclick="battlePrinp()">
+        <img src="./res/img/empoleonsmall.png" id="empoleonSmall"onclick="battleEmpo()">
+        
+</div>
+
+<div id="battleIcons">
+<img src="./res/img/squirtleBattle.png" id="squirtleBattle">
+<p id="squirtAttacks">
+<button id = "aquaJet">AQUA</button>
+<button id = "aquaRing">AQUA RING</button>
+<button id = "mist">MIST</button>
+</p>
+
+<img src="./res/img/wartortleBattle.png" id="wartortleBattle">
+<p id="wartAttacks">
+<button id = "rapidSpin">RAPID SPIN</button>
+<button id = "rainDance">RAIN DANCE</button>
+<button id = "waterPulse">WATER PULSE</button>
+</p>
+
+<img src="./res/img/blastoiseBattle.png" id="blastoiseBattle">
+<p id="blastAttacks">
+<button id = "hydroPump">HYDRO PUMP</button>
+<button id = "bite">BITE</button>
+<button id = "tailWhip">TAIL WHIP</button>
+</p>
+
+<img src="./res/img/bulbasaurBattle.png" id="bulbasaurBattle">
+<p id="bulbAttacks">
+<button id = "growl">GROWL</button>
+<button id = "poisonPowder">POISON POWDER</button>
+<button id = "vineWhip">VINE WHIP</button>
+</p>
+
+<img src="./res/img/ivysaurBattle.png" id="ivysaurBattle">
+<p id="ivyAttacks">
+<button id = "tackle">TACKLE</button>
+<button id = "leechSeed">LEECH SEED</button>
+<button id = "seedBomb">SEED BOMB</button>
+</p>
+
+<img src="./res/img/venusaurBattle.png" id="venusaurBattle">
+<p id="venusAttacks">
+<button id = "vineWhip">VINE WHIP</button>
+<button id = "solarBeam">SOLAR BEAM</button>
+<button id = "razorLeaf">RAZOR LEAF</button>
+</p>
+
+
+<img src="./res/img/charmanderBattle.png" id="charmanderBattle">
+<p id="charmanAttacks">
+<button id = "fireFang">FIRE FANG</button>
+<button id = "growl">GROWL</button>
+<button id = "scratch">SCRATCH</button>
+</p>
+
+<img src="./res/img/charmeleonBattle.png" id="charmeleonBattle">
+<p id="charmelAttacks">
+<button id = "ember">EMBER</button>
+<button id = "smokeScreen">SMOKE SCREEN</button>
+<button id = "flameThrower">FLAMETHROWER</button>
+</p>
+
+<img src="./res/img/charizardBattle.png" id="charizardBattle">
+<p id="charAttacks">
+<button id = "dragonClaw">DRAGON CLAW</button>
+<button id = "inferno">INFERNO</button>
+<button id = "dragonBreath">DRAGONS BREATH</button>
+</p>
+
+<p id="pipAttacks">
+    <button id = "bubbleBeam">BUBBLE BEAM</button>
+<button id = "pound">POUND</button>
+<button id = "peck">peck</button>
+</p>
+
+
+<img src="./res/img/prinplupBattle.png" id="prinplupBattle">
+<p id="prinpAttacks">
+<button id = "waterGun">WATER GUN</button>
+<button id = "bubbleBeam">BUBBLE BEAM</button>
+<button id = "hydroPump">HYDRO PUMP</button>
+</p>
+
+<img src="./res/img/empoleonBattle.png" id="empoleonBattle">
+<p id="empoAttacks">
+<button id = "metalClaw">METAL CLAW</button>
+<button id = "HYDRO CANNON">HYDRO CANNON</button>
+<button id = "waterGun">WATER GUN</button>
+</p>
+
+<img src="./res/img/snorlaxBattle.png" id="snorlaxBattle">
+<p id="snorAttacks">
+<button id = "earthquake">EARTHQUAKE</button>
+<button id = "heavySlam">HEAVY SLAM</button>
+<button id = "hyperBeam">HYPER BEAM</button>
+</p>
+
+<img src="./res/img/pikaBattle.png" id="pikaBattle">
+<p id="pikAttacks">
+<button id = "ironTail"onclick="ironTail()">IRON TAIL</button>
+<button id = "lightningBolt">LIGHTNING BOLT</button>
+<button id = "hyperBeam">HYPER BEAM</button>
+</p>
 </div>
 
 
+
+<img src="./res/img/venusaurBattleTwo.png" id="venusaurBattleTwo">
+
+<p id="venuHp">VENUSAUR HP: <span id="venusaurHp">1000</span></p>
+
+<p id="player">PLAYER HP: <span id="playerHp">250</span></p>
     <script src="./res/js/main.js"></script>
 </body>
 </html>
