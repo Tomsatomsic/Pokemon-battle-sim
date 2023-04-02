@@ -29,11 +29,35 @@ const venusaur = document.getElementById("venusaur")
 const snorlax = document.getElementById("snorlax")
 const pikachu = document.getElementById("pikachu")
 
+let squirtleHp = 150;
+let wartortleHp = 225;
+let blastoiseHp = 300;
+let bulbasaurHp = 150;
+let ivysaurHp = 200;
+let venusaurHp = 310;
+let charmanderHp = 140;
+let charmeleonHp = 220;
+let charizardHp = 300;
+let piplupHp = 130;
+let prinplupHp = 200;
+let empoleonHp = 280;
+let snorlaxHp = 400;
+let pikachuHp = 175;
 
-
-
-
-
+const squirtStats = document.getElementById("squirtstats")
+const wartStats = document.getElementById("wartstats")
+const blastStats = document.getElementById("blaststats")
+const charmanStats = document.getElementById("charmanstats")
+const charmStats = document.getElementById("charmstats")
+const charStats = document.getElementById("charstats")
+const bulbaStats = document.getElementById("bulbastats")
+const ivyStats = document.getElementById("ivystats")
+const venustats = document.getElementById("venustats")
+const snorStats = document.getElementById("snorstats")
+const pikaStats = document.getElementById("pikastats")
+const pipStats = document.getElementById("pipstats")
+const prinpStats = document.getElementById("prinstats")
+const empoStats = document.getElementById("empostats")
 
 function start() {
     pokelogo.style.display = "none";
@@ -63,7 +87,23 @@ function battles(){
     charmeleon.style.display = "none";
     charizard.style.display = "none";
     snorlax.style.display = "none";
-    pikachu.style.display = "none1";
+    pikachu.style.display = "none";
+
+    squirtStats.style.display = "none";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    venustats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    charmStats.style.display = "none";
+    snorStats.style.display = "none";
+    pikaStats.style.display = "none";
+    pipStats.style.display = "none";
+    prinpStats.style.display = "none";
+    empoStats.style.display = "none";
+    
 }
 function back(){
     lobby.style.display = "flex";
@@ -86,6 +126,21 @@ function back(){
     charizard.style.display = "none";
     snorlax.style.display = "none";
     pikachu.style.display = "none";
+
+    squirtStats.style.display = "none";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    venustats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    charmStats.style.display = "none";
+    snorStats.style.display = "none";
+    pikaStats.style.display = "none";
+    pipStats.style.display = "none";
+    prinpStats.style.display = "none";
+    empoStats.style.display = "none";
 }
 
 function pokeInfo(){
@@ -116,4 +171,243 @@ function back2(){
     lobby.style.display = "flex";
     menu.style.display="flex";
     woods.style.display = "none";
+}                                                    
+
+
+function squirtus(){
+    squirtStats.style.display = "flex";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    venustats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    charmStats.style.display = "none";
+    snorStats.style.display = "none";
+    pikaStats.style.display = "none";
+    pipStats.style.display = "none";
+    prinpStats.style.display = "none";
+    empoStats.style.display = "none";
+   }           
+
+function wartus(){
+    wartStats.style.display = "flex";
+    squirtStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    venustats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    charmStats.style.display = "none";
+    snorStats.style.display = "none";
+    pikaStats.style.display = "none";
+    pipStats.style.display = "none";
+    prinpStats.style.display = "none";
+    empoStats.style.display = "none";
+}                                                                       
+
+function blastus(){
+blastStats.style.display = "flex";   
+squirtStats.style.display = "none";
+wartStats.style.display = "none";                    
+ivyStats.style.display = "none";
+venustats.style.display = "none";
+charmanStats.style.display = "none";
+bulbaStats.style.display = "none";
+charStats.style.display = "none";
+charmStats.style.display = "none";
+snorStats.style.display = "none";
+pikaStats.style.display = "none";
+pipStats.style.display = "none";
+prinpStats.style.display = "none";
+empoStats.style.display = "none";                  
+} 
+        function bulbus()   {
+bulbaStats.style.display = "flex";
+squirtStats.style.display = "none";
+wartStats.style.display = "none";
+blastStats.style.display = "none";                      
+ivyStats.style.display = "none";
+venustats.style.display = "none";
+charmanStats.style.display = "none";
+charStats.style.display = "none";
+charmStats.style.display = "none";
+snorStats.style.display = "none";
+pikaStats.style.display = "none";
+pipStats.style.display = "none";
+prinpStats.style.display = "none";
+empoStats.style.display = "none";
+        }                           
+function ivus(){
+    ivyStats.style.display = "flex";
+    squirtStats.style.display = "none";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    venustats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    charmStats.style.display = "none";
+    snorStats.style.display = "none";
+    pikaStats.style.display = "none";
+    pipStats.style.display = "none";
+    prinpStats.style.display = "none";
+    empoStats.style.display = "none";
+}                                                  
+
+function venusus(){
+    venustats.style.display = "flex";
+    squirtStats.style.display = "none";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    charmStats.style.display = "none";
+    snorStats.style.display = "none";
+    pikaStats.style.display = "none";
+    pipStats.style.display = "none";
+    prinpStats.style.display = "none";
+    empoStats.style.display = "none";
 }
+
+function charmus(){                                 
+    charmanStats.style.display = "flex";
+    squirtStats.style.display = "none";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    venustats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    charmStats.style.display = "none";
+    snorStats.style.display = "none";
+    pikaStats.style.display = "none";
+    pipStats.style.display = "none";
+    prinpStats.style.display = "none";
+    empoStats.style.display = "none";
+}
+
+function charmeleonus(){
+    charmStats.style.display = "flex";
+    squirtStats.style.display = "none";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    venustats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    snorStats.style.display = "none";
+    pikaStats.style.display = "none";
+    pipStats.style.display = "none";
+    prinpStats.style.display = "none";
+    empoStats.style.display = "none";
+}
+                                                    
+function charizardus(){
+    charStats.style.display = "flex";
+    squirtStats.style.display = "none";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    venustats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charmStats.style.display = "none";
+    snorStats.style.display = "none";
+    pikaStats.style.display = "none";
+    pipStats.style.display = "none";
+    prinpStats.style.display = "none";
+    empoStats.style.display = "none";
+}
+                                                       
+
+function snorlaxus(){
+    snorStats.style.display = "flex";
+    squirtStats.style.display = "none";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    venustats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    charmStats.style.display = "none";
+    pikaStats.style.display = "none";
+    pipStats.style.display = "none";
+    prinpStats.style.display = "none";
+    empoStats.style.display = "none";
+}
+
+function pikachus(){                                   
+    pikaStats.style.display = "flex";
+    squirtStats.style.display = "none";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    venustats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    charmStats.style.display = "none";
+    snorStats.style.display = "none";
+    pipStats.style.display = "none";
+    prinpStats.style.display = "none";
+    empoStats.style.display = "none";
+}
+
+function piplupus(){                            
+    pipStats.style.display = "flex";
+    squirtStats.style.display = "none";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    venustats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    charmStats.style.display = "none";
+    snorStats.style.display = "none";
+    pikaStats.style.display = "none";
+    prinpStats.style.display = "none";
+    empoStats.style.display = "none";
+}
+
+function prinplupus(){                               
+    prinpStats.style.display = "flex";
+    squirtStats.style.display = "none";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    venustats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    charmStats.style.display = "none";
+    snorStats.style.display = "none";
+    pikaStats.style.display = "none";
+    pipStats.style.display = "none";
+    empoStats.style.display = "none";
+}
+                                                    
+function empoleonus(){
+    empoStats.style.display = "flex";
+    squirtStats.style.display = "none";
+    wartStats.style.display = "none";
+    blastStats.style.display = "none";                      
+    ivyStats.style.display = "none";
+    venustats.style.display = "none";
+    charmanStats.style.display = "none";
+    bulbaStats.style.display = "none";
+    charStats.style.display = "none";
+    charmStats.style.display = "none";
+    snorStats.style.display = "none";
+    pikaStats.style.display = "none";
+    pipStats.style.display = "none";
+    prinpStats.style.display = "none";
+}
+
