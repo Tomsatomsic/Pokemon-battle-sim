@@ -1,4 +1,4 @@
-.body{
+body{
     user-select: none;
 }
 
@@ -33,15 +33,16 @@
     left:42%;
     border-style:solid;
     border-color:black;
-    background-color:blanchedalmond;
 }
 
 #battle{
     width:100px;
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
 }
 
 #pokemon{
     width:100px;
+    background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%);
 }
 
 #battleback{
@@ -127,9 +128,9 @@ top:2%;
 #charizard{
     display:none;
     position:absolute;
-    left:55%;
-    top:50%;
-    width:10%;
+    left:53%;
+    top:48%;
+    width:13%;
 }
 #snorlax{
     display:none;
@@ -168,3 +169,170 @@ width:20%;
     top:45%;
 width:20%;
 }
+
+#squirtstats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-weight: bold;
+    left:12%;
+    top:20%;
+    background-color: beige;
+}
+
+#wartstats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-weight: bold;
+    left:28%;
+    top:20%;
+    background-color: beige;
+}
+
+#blaststats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-weight: bold;
+    left:50%;
+    top:20%;
+    background-color: beige;
+}
+
+#bulbastats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-weight: bold;
+    left:10%;
+    top:43%;
+    background-color: beige;
+}
+#ivystats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-weight: bold;
+    left:30%;
+    top:43%;
+    background-color: beige;
+}
+
+#venustats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-weight: bold;
+    left:50%;
+    top:43%;
+    background-color: beige;
+}
+
+#charmanstats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-weight: bold;
+    left:10%;
+    top:67%;
+    background-color: beige;
+}
+#charmstats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-weight: bold;
+    left:30%;
+    top:67%;
+    background-color: beige;
+}
+#charstats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-weight: bold;
+    left:48%;
+    top:69%;
+    background-color: beige;
+}
+
+#snorstats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    position:absolute;
+    right:0%;
+    top:35%;
+    font-weight: bold;
+    background-color: beige;
+}
+
+#pikastats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-weight: bold;
+    left:72%;
+    top:80%;
+    background-color: beige;
+}
+
+#pipstats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-weight: bold;
+    left:12%;
+    top:90%;
+    background-color: beige;
+}
+#prinstats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    font-weight: bold;
+    left:28%;
+    top:90%;
+    background-color: beige;
+}
+
+#empostats{
+    display:none;
+    font-family: 'Nunito', sans-serif;
+    font-size:17px;
+    font-family: 'Courier New', Courier, monospace;
+    position:absolute;
+    left:50%;
+    top:90%;
+    font-weight: bold;
+    background-color: beige;
+}
+
+
