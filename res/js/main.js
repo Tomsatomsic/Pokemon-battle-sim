@@ -1,3 +1,4 @@
+//button and img 
 const play = document.getElementById("play")
 const pokelogo = document.getElementById("pokelogo")
 const lobby = document.getElementById("lobby")
@@ -13,7 +14,7 @@ const inf = document.getElementById("inf")
 const backbutton = document.getElementById("backbutton")
 const woods = document.getElementById("woods")
 
-
+//poke info pokemon images
 const empoleon = document.getElementById("empoleon")
 const piplup = document.getElementById("piplup")
 const prinplup = document.getElementById("prinplup")
@@ -29,21 +30,16 @@ const venusaur = document.getElementById("venusaur")
 const snorlax = document.getElementById("snorlax")
 const pikachu = document.getElementById("pikachu")
 
-let squirtleHp = 150;
-let wartortleHp = 225;
-let blastoiseHp = 300;
-let bulbasaurHp = 150;
-let ivysaurHp = 200;
-let venusaurHp = 310;
-let charmanderHp = 140;
-let charmeleonHp = 220;
-let charizardHp = 300;
-let piplupHp = 130;
-let prinplupHp = 200;
-let empoleonHp = 280;
-let snorlaxHp = 400;
-let pikachuHp = 175;
+//Hp
+let venusaurHpcka= 1000;
 
+const venusaurHp = document.getElementById("venusaurHp")
+let snorlaxHP = 1000;
+
+const player = document.getElementById("player")
+const venuHp = document.getElementById("venuHp")
+
+//pokeStats
 const squirtStats = document.getElementById("squirtstats")
 const wartStats = document.getElementById("wartstats")
 const blastStats = document.getElementById("blaststats")
@@ -59,7 +55,81 @@ const pipStats = document.getElementById("pipstats")
 const prinpStats = document.getElementById("prinstats")
 const empoStats = document.getElementById("empostats")
 
-function start() {
+//pokeon small pixel icons
+const squirtleSmall = document.getElementById("squirtleSmall")
+const wartortleSmall = document.getElementById("wartortleSmall")
+const blastoiseSmall = document.getElementById("blastoiseSmall")
+
+const bulbasaurSmall = document.getElementById("bulbasaurSmall")
+const ivysaurSmall = document.getElementById("ivysaurSmall")
+const venusaurSmall = document.getElementById("venusaurSmall")
+
+const charmanderSmall = document.getElementById("charmanderSmall")
+const charmeleonSmall = document.getElementById("charmeleonSmall")
+const charizardSmall = document.getElementById("charizardSmall")
+
+const piplupSmall = document.getElementById("piplupSmall")
+const prinplupSmall = document.getElementById("prinplupSmall")
+const empoleonSmall = document.getElementById("empoleonSmall")
+
+const snorlaxSmall = document.getElementById("snorlaxSmall")
+
+const pikaSmall = document.getElementById("pikaSmall")
+
+const pokeChooser = document.getElementById("pokeChooser")
+
+
+//pokemon battle icons
+const squirtleBattle = document.getElementById("squirtleBattle")
+const wartortleBattle = document.getElementById("wartortleBattle")
+const blastoiseBattle = document.getElementById("blastoiseBattle")
+
+const bulbasaurBattle = document.getElementById("bulbasaurBattle")
+const ivysaurBattle = document.getElementById("ivysaurBattle")
+const venusaurBattle = document.getElementById("venusaurBattle")
+
+const charmanderBattle = document.getElementById("charmanderBattle")
+const charmeleonBattle = document.getElementById("charmeleonBattle")
+const charizardBattle = document.getElementById("charizardBattle")
+
+const piplupBattle = document.getElementById("piplupBattle")
+const prinplupBattle = document.getElementById("prinplupBattle")
+const empoleonBattle = document.getElementById("empoleonBattle")
+
+const snorlaxBattle = document.getElementById("snorlaxBattle")
+const pikaBattle = document.getElementById("pikaBattle")
+
+
+//attacks of pokemon
+const pikAttacks = document.getElementById("pikAttacks")
+const snorAttacks = document.getElementById("snorAttacks")
+
+const squirtAttacks = document.getElementById("squirtAttack")
+const wartAttacks = document.getElementById("wartAttacks")
+const blastAttacks = document.getElementById("blastAttacks")
+
+const bulbAttacks = document.getElementById("bulbAttacks")
+const ivyAttacks = document.getElementById("ivyAttacks")
+const venusAttacks = document.getElementById("venusAttacks")
+
+const charmanAttacks = document.getElementById("charmanAttacks")
+const charmelAttacks = document.getElementById("charmelAttacks")
+const charAttacks = document.getElementById("charAttacks")
+
+const pipAttacks = document.getElementById("pipAttacks")
+const prinpAttacks = document.getElementById("prinpAttacks")
+const empoAttacks = document.getElementById("empoAttacks")
+
+//"enemy" pokemon
+
+const venusaurBattleTwo = document.getElementById("venusaurBattleTwo")
+
+
+
+
+
+//play button
+ start=()=>{
     pokelogo.style.display = "none";
     play.style.display = "none";
     lobby.style.display = "flex";
@@ -67,51 +137,52 @@ function start() {
     inf.style.display = "none";
 }
 
-
-function battles(){
+//battle button function
+ battles=()=>{
     battleback.style.display = "flex";
     lobby.style.display = "none";
     menu.style.display="none";
     backbutton.style.display = "flex";
 
-    empoleon.style.display = "none";
-    piplup.style.display = "none";
-    prinplup.style.display = "none";
-    squirtle.style.display = "none";
-    wartortle.style.display = "none";
-    blastoise.style.display = "none";
-    bulbasaur.style.display = "none";
-    ivysaur.style.display = "none";
-    venusaur.style.display = "none";
-    charmander.style.display = "none";
-    charmeleon.style.display = "none";
-    charizard.style.display = "none";
-    snorlax.style.display = "none";
-    pikachu.style.display = "none";
-
-    squirtStats.style.display = "none";
-    wartStats.style.display = "none";
-    blastStats.style.display = "none";                      
-    ivyStats.style.display = "none";
-    venustats.style.display = "none";
-    charmanStats.style.display = "none";
-    bulbaStats.style.display = "none";
-    charStats.style.display = "none";
-    charmStats.style.display = "none";
-    snorStats.style.display = "none";
-    pikaStats.style.display = "none";
-    pipStats.style.display = "none";
-    prinpStats.style.display = "none";
-    empoStats.style.display = "none";
     
+    squirtleSmall.style.display = "flex";
+    wartortleSmall.style.display = "flex";
+    blastoiseSmall.style.display = "flex";
+
+    bulbasaurSmall.style.display = "flex";
+    ivysaurSmall.style.display = "flex";
+    venusaurSmall.style.display = "flex";
+
+    charmanderSmall.style.display = "flex";
+    charmeleonSmall.style.display = "flex";
+    charizardSmall.style.display = "flex";
+
+    piplupSmall.style.display = "flex";
+    prinplupSmall.style.display = "flex";
+    empoleonSmall.style.display = "flex";
+
+   snorlaxSmall.style.display = "flex";
+
+   pikaSmall.style.display = "flex";
+
+   venusaurBattleTwo.style.display = "flex";
+   
+   venusaurHp.style.display = "flex";
+   venuHp.style.display = "flex";
+  player.style.display = "flex";
+  
 }
-function back(){
+//back button battle
+ back=()=>{
     lobby.style.display = "flex";
     menu.style.display="flex";
+    venuHp.style.display = "none"
+    player.style.display = "none";
+    venusaur.style.display = "none";
+    venusaurBattleTwo.style.display = "none";
     battleback.style.display = "none";
     backbutton.style.display = "none";
     woods.style.display = "none";
-
     empoleon.style.display = "none";
     piplup.style.display = "none";
     prinplup.style.display = "none";
@@ -126,7 +197,6 @@ function back(){
     charizard.style.display = "none";
     snorlax.style.display = "none";
     pikachu.style.display = "none";
-
     squirtStats.style.display = "none";
     wartStats.style.display = "none";
     blastStats.style.display = "none";                      
@@ -141,9 +211,53 @@ function back(){
     pipStats.style.display = "none";
     prinpStats.style.display = "none";
     empoStats.style.display = "none";
+    squirtleSmall.style.display = "none";
+    wartortleSmall.style.display = "none";
+    blastoiseSmall.style.display = "none";
+    bulbasaurSmall.style.display = "none";
+    ivysaurSmall.style.display = "none";
+    venusaurSmall.style.display = "none";
+    charmanderSmall.style.display = "none";
+    charmeleonSmall.style.display = "none";
+    charizardSmall.style.display = "none";
+    piplupSmall.style.display = "none";
+    prinplupSmall.style.display = "none";
+    empoleonSmall.style.display = "none";
+   snorlaxSmall.style.display = "none";
+   pikaSmall.style.display = "none";
+   charmeleonBattle.style.display = "none";
+   charmanderBattle.style.display = "none";
+   venusaurBattle.style.display = "none";
+   ivysaurBattle.style.display = "none";
+   bulbasaurBattle.style.display = "none";
+   blastoiseBattle.style.display ="none";
+   wartortleBattle.style.display = "none";
+squirtleBattle.style.display ="none";
+charizardBattle.style.display = "none";
+piplup.style.display = "none";
+prinplupBattle.style.display = "none";
+empoleonBattle.style.display ="none";
+snorlaxBattle.style.display = "none";
+pikaBattle.style.display = "none";
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+blastAttacks.style.display = "none";
+bulbAttacks.style.display = "none";
+ivyAttacks.style.display = "none";
+venusAttacks.style.display = "none";
+charmanAttacks.style.display = "none";
+charmelAttacks.style.display = "none";
+charAttacks.style.display = "none";
+pipAttacks.style.display = "none";
+prinpAttacks.style.display = "none";
+empoAttacks.style.display = "none";
+snorAttacks.style.display = "none";
+pikAttacks.style.display = "none";
+
 }
 
-function pokeInfo(){
+//pokemon info button
+pokeInfo=()=>{
     empoleon.style.display = "flex";
     piplup.style.display = "flex";
     prinplup.style.display = "flex";
@@ -166,15 +280,18 @@ function pokeInfo(){
     woods.style.display = "flex";
 }
 
-function back2(){
+
+//back button info
+ back2=()=>{
     backbutton.style.display = "none";
     lobby.style.display = "flex";
     menu.style.display="flex";
-    woods.style.display = "none";
+    woods.style.display = "none"
+    
 }                                                    
 
-
-function squirtus(){
+//functions for pokeStats
+squirtus=()=>{
     squirtStats.style.display = "flex";
     wartStats.style.display = "none";
     blastStats.style.display = "none";                      
@@ -191,7 +308,7 @@ function squirtus(){
     empoStats.style.display = "none";
    }           
 
-function wartus(){
+wartus=()=>{
     wartStats.style.display = "flex";
     squirtStats.style.display = "none";
     blastStats.style.display = "none";                      
@@ -208,7 +325,7 @@ function wartus(){
     empoStats.style.display = "none";
 }                                                                       
 
-function blastus(){
+blastus=()=>{
 blastStats.style.display = "flex";   
 squirtStats.style.display = "none";
 wartStats.style.display = "none";                    
@@ -224,7 +341,7 @@ pipStats.style.display = "none";
 prinpStats.style.display = "none";
 empoStats.style.display = "none";                  
 } 
-        function bulbus()   {
+bulbus=()=>{
 bulbaStats.style.display = "flex";
 squirtStats.style.display = "none";
 wartStats.style.display = "none";
@@ -240,7 +357,7 @@ pipStats.style.display = "none";
 prinpStats.style.display = "none";
 empoStats.style.display = "none";
         }                           
-function ivus(){
+ivus=()=>{
     ivyStats.style.display = "flex";
     squirtStats.style.display = "none";
     wartStats.style.display = "none";
@@ -257,7 +374,7 @@ function ivus(){
     empoStats.style.display = "none";
 }                                                  
 
-function venusus(){
+ venusus=()=>{
     venustats.style.display = "flex";
     squirtStats.style.display = "none";
     wartStats.style.display = "none";
@@ -274,7 +391,7 @@ function venusus(){
     empoStats.style.display = "none";
 }
 
-function charmus(){                                 
+charmus=()=>{                                 
     charmanStats.style.display = "flex";
     squirtStats.style.display = "none";
     wartStats.style.display = "none";
@@ -291,7 +408,7 @@ function charmus(){
     empoStats.style.display = "none";
 }
 
-function charmeleonus(){
+charmeleonus=()=>{
     charmStats.style.display = "flex";
     squirtStats.style.display = "none";
     wartStats.style.display = "none";
@@ -307,8 +424,8 @@ function charmeleonus(){
     prinpStats.style.display = "none";
     empoStats.style.display = "none";
 }
-                                                    
-function charizardus(){
+
+ charizardus=()=>{
     charStats.style.display = "flex";
     squirtStats.style.display = "none";
     wartStats.style.display = "none";
@@ -325,8 +442,7 @@ function charizardus(){
     empoStats.style.display = "none";
 }
                                                        
-
-function snorlaxus(){
+ snorlaxus=()=>{
     snorStats.style.display = "flex";
     squirtStats.style.display = "none";
     wartStats.style.display = "none";
@@ -343,7 +459,7 @@ function snorlaxus(){
     empoStats.style.display = "none";
 }
 
-function pikachus(){                                   
+ pikachus=()=>{                                   
     pikaStats.style.display = "flex";
     squirtStats.style.display = "none";
     wartStats.style.display = "none";
@@ -360,7 +476,7 @@ function pikachus(){
     empoStats.style.display = "none";
 }
 
-function piplupus(){                            
+ piplupus=()=>{                            
     pipStats.style.display = "flex";
     squirtStats.style.display = "none";
     wartStats.style.display = "none";
@@ -377,7 +493,7 @@ function piplupus(){
     empoStats.style.display = "none";
 }
 
-function prinplupus(){                               
+ prinplupus=()=>{                               
     prinpStats.style.display = "flex";
     squirtStats.style.display = "none";
     wartStats.style.display = "none";
@@ -394,7 +510,7 @@ function prinplupus(){
     empoStats.style.display = "none";
 }
                                                     
-function empoleonus(){
+ empoleonus=()=>{
     empoStats.style.display = "flex";
     squirtStats.style.display = "none";
     wartStats.style.display = "none";
@@ -411,3 +527,518 @@ function empoleonus(){
     prinpStats.style.display = "none";
 }
 
+//battle imgs
+battleSquirt =()=>{
+squirtleBattle.style.display = "flex";
+
+wartortleBattle.style.display = "none";
+ivysaurBattle.style.display = "none";
+    bulbasaurBattle.style.display = "none";
+    blastoiseBattle.style.display ="none";
+    charmanderBattle.style.display = "none";
+    charmeleonBattle.style.display = "none";
+    charizardBattle.style.display = "none";
+    piplup.style.display = "none";
+    prinplupBattle.style.display = "none";
+    empoleonBattle.style.display ="none";
+    snorlaxBattle.style.display = "none";
+    pikaBattle.style.display = "none";
+
+    squirtAttacks.style.display = "flex";
+    wartAttacks.style.display = "none";
+    blastAttacks.style.display = "none";
+
+    bulbAttacks.style.display = "none";
+    ivyAttacks.style.display = "none";
+    venusAttacks.style.display = "none";
+
+    charmanAttacks.style.display = "none";
+    charmelAttacks.style.display = "none";
+    charAttacks.style.display = "none";
+    
+    pipAttacks.style.display = "none";
+    prinpAttacks.style.display = "none";
+    empoAttacks.style.display = "none";
+
+    snorAttacks.style.display = "none";
+    pikAttacks.style.display = "none";
+
+}
+
+battleWart =()=>{
+wartortleBattle.style.display = "flex";
+wartAttacks.style.display = "flex";
+
+squirtleBattle.style.display ="none";
+blastoiseBattle.style.display = "none";
+ivysaurBattle.style.display = "none";
+    bulbasaurBattle.style.display = "none";
+    charmanderBattle.style.display = "none";
+    charmeleonBattle.style.display = "none";
+    charizardBattle.style.display = "none";
+    piplup.style.display = "none";
+    prinplupBattle.style.display = "none";
+    empoleonBattle.style.display ="none";
+    snorlaxBattle.style.display = "none";
+    pikaBattle.style.display = "none";
+
+    squirtAttacks.style.display = "none";
+    blastAttacks.style.display = "none";
+
+    bulbAttacks.style.display = "none";
+    ivyAttacks.style.display = "none";
+    venusAttacks.style.display = "none";
+
+    charmanAttacks.style.display = "none";
+    charmelAttacks.style.display = "none";
+    charAttacks.style.display = "none";
+    
+    pipAttacks.style.display = "none";
+    prinpAttacks.style.display = "none";
+    empoAttacks.style.display = "none";
+
+    snorAttacks.style.display = "none";
+    pikAttacks.style.display = "none";
+}
+
+battleBlast = ()=>{
+    blastAttacks.style.display = "flex";
+    blastoiseBattle.style.display ="flex";
+    wartortleBattle.style.display = "none";
+squirtleBattle.style.display ="none";
+bulbasaurBattle.style.display = "none";
+ivysaurBattle.style.display = "none";
+venusaurBattle.style.display = "none";
+charmanderBattle.style.display = "none";
+charmeleonBattle.style.display = "none";
+charizardBattle.style.display = "none";
+piplup.style.display = "none";
+prinplupBattle.style.display = "none";
+empoleonBattle.style.display ="none";
+snorlaxBattle.style.display = "none";
+pikaBattle.style.display = "none";
+
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+
+
+bulbAttacks.style.display = "none";
+ivyAttacks.style.display = "none";
+venusAttacks.style.display = "none";
+
+charmanAttacks.style.display = "none";
+charmelAttacks.style.display = "none";
+charAttacks.style.display = "none";
+
+pipAttacks.style.display = "none";
+prinpAttacks.style.display = "none";
+empoAttacks.style.display = "none";
+
+snorAttacks.style.display = "none";
+pikAttacks.style.display = "none";
+}
+
+battleBulb =()=>{
+    squirtleBattle.style.display ="none";
+    bulbAttacks.style.display = "flex";
+    bulbasaurBattle.style.display = "flex";
+    blastoiseBattle.style.display ="none";
+    wartortleBattle.style.display = "none";
+
+ivysaurBattle.style.display = "none";
+charmanderBattle.style.display = "none";
+charmeleonBattle.style.display = "none";
+charizardBattle.style.display = "none";
+piplup.style.display = "none";
+prinplupBattle.style.display = "none";
+empoleonBattle.style.display ="none";
+snorlaxBattle.style.display = "none";
+pikaBattle.style.display = "none";
+
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+blastAttacks.style.display = "none";
+
+
+ivyAttacks.style.display = "none";
+venusAttacks.style.display = "none";
+
+charmanAttacks.style.display = "none";
+charmelAttacks.style.display = "none";
+charAttacks.style.display = "none";
+
+pipAttacks.style.display = "none";
+prinpAttacks.style.display = "none";
+empoAttacks.style.display = "none";
+
+snorAttacks.style.display = "none";
+pikAttacks.style.display = "none";
+}
+
+battleIvy =()=>{
+    ivyAttacks.style.display = "flex";
+    ivysaurBattle.style.display = "flex";
+    bulbasaurBattle.style.display = "none";
+    blastoiseBattle.style.display ="none";
+    wartortleBattle.style.display = "none";
+squirtleBattle.style.display ="none";
+charmanderBattle.style.display = "none";
+charmeleonBattle.style.display = "none";
+charizardBattle.style.display = "none";
+piplup.style.display = "none";
+prinplupBattle.style.display = "none";
+empoleonBattle.style.display ="none";
+snorlaxBattle.style.display = "none";
+pikaBattle.style.display = "none";
+
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+blastAttacks.style.display = "none";
+
+bulbAttacks.style.display = "none";
+
+venusAttacks.style.display = "none";
+
+charmanAttacks.style.display = "none";
+charmelAttacks.style.display = "none";
+charAttacks.style.display = "none";
+
+pipAttacks.style.display = "none";
+prinpAttacks.style.display = "none";
+empoAttacks.style.display = "none";
+
+snorAttacks.style.display = "none";
+pikAttacks.style.display = "none";
+}
+
+battleVenus =()=>{
+    venusAttacks.style.display = "flex";
+    venusaurBattle.style.display = "flex";
+    ivysaurBattle.style.display = "none";
+    bulbasaurBattle.style.display = "none";
+    blastoiseBattle.style.display ="none";
+    wartortleBattle.style.display = "none";
+squirtleBattle.style.display ="none";
+charmanderBattle.style.display = "none";
+charmeleonBattle.style.display = "none";
+charizardBattle.style.display = "none";
+piplup.style.display = "none";
+prinplupBattle.style.display = "none";
+empoleonBattle.style.display ="none";
+snorlaxBattle.style.display = "none";
+pikaBattle.style.display = "none";
+
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+blastAttacks.style.display = "none";
+
+bulbAttacks.style.display = "none";
+ivyAttacks.style.display = "none";
+
+
+charmanAttacks.style.display = "none";
+charmelAttacks.style.display = "none";
+charAttacks.style.display = "none";
+
+pipAttacks.style.display = "none";
+prinpAttacks.style.display = "none";
+empoAttacks.style.display = "none";
+
+snorAttacks.style.display = "none";
+pikAttacks.style.display = "none";
+}
+
+battleCharman =()=>{
+    charmanAttacks.style.display = "flex";
+    charmanderBattle.style.display = "flex";
+    venusaurBattle.style.display = "none";
+    ivysaurBattle.style.display = "none";
+    bulbasaurBattle.style.display = "none";
+    blastoiseBattle.style.display ="none";
+    wartortleBattle.style.display = "none";
+squirtleBattle.style.display ="none";
+charmeleonBattle.style.display = "none";
+charizardBattle.style.display = "none";
+piplup.style.display = "none";
+prinplupBattle.style.display = "none";
+empoleonBattle.style.display ="none";
+snorlaxBattle.style.display = "none";
+pikaBattle.style.display = "none";
+
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+blastAttacks.style.display = "none";
+
+bulbAttacks.style.display = "none";
+ivyAttacks.style.display = "none";
+venusAttacks.style.display = "none";
+
+
+charmelAttacks.style.display = "none";
+charAttacks.style.display = "none";
+
+pipAttacks.style.display = "none";
+prinpAttacks.style.display = "none";
+empoAttacks.style.display = "none";
+
+snorAttacks.style.display = "none";
+pikAttacks.style.display = "none";
+}
+
+battleCharmel =()=>{
+    charmelAttacks.style.display = "flex";
+    charmeleonBattle.style.display = "flex";
+    charmanderBattle.style.display = "none";
+    venusaurBattle.style.display = "none";
+    ivysaurBattle.style.display = "none";
+    bulbasaurBattle.style.display = "none";
+    blastoiseBattle.style.display ="none";
+    wartortleBattle.style.display = "none";
+squirtleBattle.style.display ="none";
+charizardBattle.style.display = "none";
+piplup.style.display = "none";
+prinplupBattle.style.display = "none";
+empoleonBattle.style.display ="none";
+snorlaxBattle.style.display = "none";
+pikaBattle.style.display = "none";
+
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+blastAttacks.style.display = "none";
+
+bulbAttacks.style.display = "none";
+ivyAttacks.style.display = "none";
+venusAttacks.style.display = "none";
+
+charmanAttacks.style.display = "none";
+
+charAttacks.style.display = "none";
+
+pipAttacks.style.display = "none";
+prinpAttacks.style.display = "none";
+empoAttacks.style.display = "none";
+
+snorAttacks.style.display = "none";
+pikAttacks.style.display = "none";
+}
+
+battleChar =()=>{
+    charAttacks.style.display = "flex";
+    charizardBattle.style.display = "flex";
+    charmeleonBattle.style.display = "none";
+    charmanderBattle.style.display = "none";
+    venusaurBattle.style.display = "none";
+    ivysaurBattle.style.display = "none";
+    bulbasaurBattle.style.display = "none";
+    blastoiseBattle.style.display ="none";
+    wartortleBattle.style.display = "none";
+squirtleBattle.style.display ="none";
+piplup.style.display = "none";
+prinplupBattle.style.display = "none";
+empoleonBattle.style.display ="none";
+snorlaxBattle.style.display = "none";
+pikaBattle.style.display = "none";
+
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+blastAttacks.style.display = "none";
+
+bulbAttacks.style.display = "none";
+ivyAttacks.style.display = "none";
+venusAttacks.style.display = "none";
+
+charmanAttacks.style.display = "none";
+charmelAttacks.style.display = "none";
+
+
+pipAttacks.style.display = "none";
+prinpAttacks.style.display = "none";
+empoAttacks.style.display = "none";
+
+snorAttacks.style.display = "none";
+pikAttacks.style.display = "none";
+}
+
+battlePip =()=>{
+    pipAttacks.style.display = "flex";
+    piplup.style.display = "flex";
+    charizardBattle.style.display = "none";
+    charmeleonBattle.style.display = "none";
+    charmanderBattle.style.display = "none";
+    venusaurBattle.style.display = "none";
+    ivysaurBattle.style.display = "none";
+    bulbasaurBattle.style.display = "none";
+    blastoiseBattle.style.display ="none";
+    wartortleBattle.style.display = "none";
+squirtleBattle.style.display ="none";
+prinplupBattle.style.display = "none";
+empoleonBattle.style.display ="none";
+snorlaxBattle.style.display = "none";
+pikaBattle.style.display = "none";
+
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+blastAttacks.style.display = "none";
+
+bulbAttacks.style.display = "none";
+ivyAttacks.style.display = "none";
+venusAttacks.style.display = "none";
+
+charmanAttacks.style.display = "none";
+charmelAttacks.style.display = "none";
+charAttacks.style.display = "none";
+
+
+prinpAttacks.style.display = "none";
+empoAttacks.style.display = "none";
+
+snorAttacks.style.display = "none";
+pikAttacks.style.display = "none";
+}
+
+battlePrinp =()=>{
+    prinpAttacks.style.display = "flex";
+    prinplupBattle.style.display = "flex";
+    piplup.style.display = "none";
+    charizardBattle.style.display = "none";
+    charmeleonBattle.style.display = "none";
+    charmanderBattle.style.display = "none";
+    venusaurBattle.style.display = "none";
+    ivysaurBattle.style.display = "none";
+    bulbasaurBattle.style.display = "none";
+    blastoiseBattle.style.display ="none";
+    wartortleBattle.style.display = "none";
+squirtleBattle.style.display ="none";
+empoleonBattle.style.display ="none";
+snorlaxBattle.style.display = "none";
+pikaBattle.style.display = "none";
+
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+blastAttacks.style.display = "none";
+
+bulbAttacks.style.display = "none";
+ivyAttacks.style.display = "none";
+venusAttacks.style.display = "none";
+
+charmanAttacks.style.display = "none";
+charmelAttacks.style.display = "none";
+charAttacks.style.display = "none";
+
+pipAttacks.style.display = "none";
+empoAttacks.style.display = "none";
+
+snorAttacks.style.display = "none";
+pikAttacks.style.display = "none";
+}
+
+battleEmpo =()=>{
+    empoAttacks.style.display = "flex";
+    empoleonBattle.style.display ="flex";
+    prinplupBattle.style.display = "none";
+    piplup.style.display = "none";
+    charizardBattle.style.display = "none";
+    charmeleonBattle.style.display = "none";
+    charmanderBattle.style.display = "none";
+    venusaurBattle.style.display = "none";
+    ivysaurBattle.style.display = "none";
+    bulbasaurBattle.style.display = "none";
+    blastoiseBattle.style.display ="none";
+    wartortleBattle.style.display = "none";
+squirtleBattle.style.display ="none";
+snorlaxBattle.style.display = "none";
+pikaBattle.style.display = "none";
+
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+blastAttacks.style.display = "none";
+
+bulbAttacks.style.display = "none";
+ivyAttacks.style.display = "none";
+venusAttacks.style.display = "none";
+
+charmanAttacks.style.display = "none";
+charmelAttacks.style.display = "none";
+charAttacks.style.display = "none";
+
+pipAttacks.style.display = "none";
+prinpAttacks.style.display = "none";
+
+
+snorAttacks.style.display = "none";
+pikAttacks.style.display = "none";
+}
+
+battleSnor =()=>{
+    snorAttacks.style.display = "flex";
+    snorlaxBattle.style.display = "flex"
+    empoleonBattle.style.display ="none";
+    prinplupBattle.style.display = "none";
+    piplup.style.display = "none";
+    charizardBattle.style.display = "none";
+    charmeleonBattle.style.display = "none";
+    charmanderBattle.style.display = "none";
+    venusaurBattle.style.display = "none";
+    ivysaurBattle.style.display = "none";
+    bulbasaurBattle.style.display = "none";
+    blastoiseBattle.style.display ="none";
+    wartortleBattle.style.display = "none";
+squirtleBattle.style.display ="none";
+pikaBattle.style.display = "none";
+
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+blastAttacks.style.display = "none";
+
+bulbAttacks.style.display = "none";
+ivyAttacks.style.display = "none";
+venusAttacks.style.display = "none";
+
+charmanAttacks.style.display = "none";
+charmelAttacks.style.display = "none";
+charAttacks.style.display = "none";
+
+pipAttacks.style.display = "none";
+prinpAttacks.style.display = "none";
+empoAttacks.style.display = "none";
+
+
+pikAttacks.style.display = "none";
+
+}
+
+battlePika = ()=>{
+    pikAttacks.style.display = "flex";
+    pikaBattle.style.display = "flex";
+    snorlaxBattle.style.display = "none"
+    empoleonBattle.style.display ="none";
+    prinplupBattle.style.display = "none";
+    piplup.style.display = "none";
+    charizardBattle.style.display = "none";
+    charmeleonBattle.style.display = "none";
+    charmanderBattle.style.display = "none";
+    venusaurBattle.style.display = "none";
+    ivysaurBattle.style.display = "none";
+    bulbasaurBattle.style.display = "none";
+    blastoiseBattle.style.display ="none";
+    wartortleBattle.style.display = "none";
+squirtleBattle.style.display ="none";
+squirtAttacks.style.display = "none";
+wartAttacks.style.display = "none";
+blastAttacks.style.display = "none";
+bulbAttacks.style.display = "none";
+ivyAttacks.style.display = "none";
+venusAttacks.style.display = "none";
+charmanAttacks.style.display = "none";
+charmelAttacks.style.display = "none";
+charAttacks.style.display = "none";
+pipAttacks.style.display = "none";
+prinpAttacks.style.display = "none";
+empoAttacks.style.display = "none";
+snorAttacks.style.display = "none";
+
+}
+
+ironTail=()=>{
+   venusaurHp--;
+}
